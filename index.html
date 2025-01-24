@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Struckle | Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.10/pico.min.css">
+    <style>
+        :root {
+            --primary: #d946ef;
+            --primary-hover: #e879f9;
+            --font-family: 'IBM Plex Mono', monospace;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+        body { 
+            font-family: var(--font-family);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        header {
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        .ascii-border {
+            padding: 1rem;
+            border: 1px solid var(--primary);
+            position: relative;
+            margin: 2rem 0;
+        }
+        .ascii-border::before {
+            content: "+--[Resume]--+";
+            position: absolute;
+            top: -0.8em;
+            left: 1em;
+            background: var(--background-color);
+            padding: 0 0.5em;
+            color: var(--primary);
+        }
+        .experience-item {
+            border-left: 2px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+        .terminal-prompt::before {
+            content: "$ ";
+            color: var(--primary);
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .skill-category {
+            background: rgba(217, 70, 239, 0.1);
+            padding: 1rem;
+            border: 1px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 class="terminal-prompt">Jacob Struckle</h1>
+            <p>Keeper of Lore and Ancient Ways</p>
+            <nav>
+                <ul>
+                    <li><a href="mailto:jacob-struckle@outlook.com">jacob-struckle@outlook.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/jacobstruckle/">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="ascii-border">
+            <h2 class="terminal-prompt">Summary</h2>
+            <p>Creative integration consultant with over 12 years of experience in API integration & engineering,
+            project management, technical relationship management, pre-sales consultation, and platform implementation.
+            Passionate about leading cross-functional teams and building client relationships.</p>
+        </article>
+
+        <article class="ascii-border">
+            <h2 class="terminal-prompt">Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Specialist, Integration</h3>
+                <p><strong>DoseSpot</strong> | Sept 2024 – Present | Spanish Fork, Utah</p>
+                <ul>
+                    <li>→ Through shadowed paths of Mirkwood deep, the dwarves and Bilbo crept along dark trails, seeking ancient halls beneath</li>
+                    <li>→ Gandalf raised his staff against the flame and shadow, crying words of power passed down through ages of the world</li>
+                    <li>→ In Rivendell the elven folk kept ancient lore and crafts alive while autumn leaves fell gold and red</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Manager, Professional Services (Integration)</h3>
+                <p><strong>PayNearMe</strong> | Oct 2022 – Apr 2024 | Spanish Fork, Utah</p>
+                <ul>
+                    <li>→ At gates of Moria spoke ancient words, seeking paths beneath the mountain deep</li>
+                    <li>→ Through mists of time the Fellowship nine walked roads untold by mortal men</li>
+                    <li>→ From Shire to Mordor Frodo bore the Ring while darkness grew in East</li>
+                    <li>→ Council gathered wise from every race to forge their paths against the shadow</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="ascii-border">
+            <h2 class="terminal-prompt">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Python – Flask, Django, FastAPI</li>
+                        <li>Java – Spring Boot</li>
+                        <li>Go – Gin</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <small class="terminal-prompt">Located in Spanish Fork, UT | Available for Senior & Staff Roles</small>
+        </footer>
+    </main>
+</body>
+</html>
